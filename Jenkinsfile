@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('初始化') {
             steps {
-                echo "开始构建"
+                echo "开始初始化"
             }
         }
         stage('构建') {
             steps {
-                sh 'mvn -B -DskipTests clean package'
+                echo "开始构建"
             }
         }
         stage('打包') {
